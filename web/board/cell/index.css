@@ -1,0 +1,46 @@
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background-color: #F0F0F0;
+    color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.cell::before {
+    content: "";
+    width: var(--dot-size);
+    height: var(--dot-size);
+    border-radius: 50%;
+    background-color: currentColor;
+}
+
+.cell.empty::before {
+    box-shadow: 0 0 0 1px #D0D0D0 inset;
+}
+
+.cell::after {
+    content: attr(data-i);
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8px;
+    line-height: 12px;
+    color: #000000;
+    opacity: 0.4;
+}
+
+.input {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    opacity: 0;
+    z-index: 1;
+}

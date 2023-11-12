@@ -1,0 +1,17 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:global(#app) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: system-ui, "Helvetica Neue", Arial, sans-serif;
+}

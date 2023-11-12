@@ -1,0 +1,39 @@
+.panel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    padding-top: 16px;
+    transform: translateX(-50%);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px #0000FF inset;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    appearance: none;
+    transition: background-color 0.24s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.delimiter {
+    height: 26px;
+    margin: 0 4px;
+    border-left: 1px solid #A0A0A0;
+}

@@ -1,0 +1,21 @@
+.board {
+    --dot-size: 10px;
+    --cell-size: calc(var(--dot-size) * 5);
+}
+
+.row {
+    display: flex;
+}
+
+.row.even {
+    flex-direction: row-reverse;
+}
+
+.tail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gap {
+    flex-basis: 100%;
+}
